@@ -20,7 +20,7 @@ import awswrangler as wr
 # RDS settings
 import sys
 import logging
-import pymysql
+# import psycopg2
 import os
 
 def lambda_handler(event, context):
@@ -70,7 +70,7 @@ def lambda_handler(event, context):
 
         # # create the database connection outside of the handler to allow connections to be
         # # re-used by subsequent function invocations.
-        # conn = pymysql.connect(host=rds_proxy_host, user=user_name, passwd=password, db=db_name)
+        # conn = psycopg2.connect(host=rds_proxy_host, user=user_name, passwd=password, db=db_name)
 
         # cur = conn.cursor()
 
