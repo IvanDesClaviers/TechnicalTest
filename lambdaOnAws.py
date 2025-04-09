@@ -70,7 +70,7 @@ def lambda_handler(event, context):
 
         # # create the database connection outside of the handler to allow connections to be
         # # re-used by subsequent function invocations.
-        # conn = psycopg2.connect(host=rds_proxy_host, user=user_name, passwd=password, db=db_name)
+        # conn = psycopg2.connect(host=rds_proxy_host, user=user_name, password=password, dbname=db_name)
 
         # cur = conn.cursor()
 
